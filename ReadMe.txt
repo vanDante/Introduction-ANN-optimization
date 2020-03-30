@@ -27,14 +27,21 @@ https://www.kaggle.com/dantefilu/a-keras-neural-network-nn-83-3-test-score
 
 DATA OVERVIEW
 
-The data has been split into two groups and can be found in the folder 'data':
+The input data has been split into two groups and can be found in the folder 'input':
 
     training set (train.csv)
     test set (test.csv)
 
 The training set contains the target feature 'Survived' and is used to build the machine learning models.
-
 The test set is used to see how well the model performs on unseen data. The predictions for the test set (for which the target feature 'Survived' is unknown) 
 have been sent to Kaggle for the evaluation of the test score.
 
+The output data is stored in the folder 'output'. It contains the passenger IDs of  the test data and the respective survival status - 0 for 'dead' and 1 for 'survived'.
+There are four output files:
+
+    survived_dnn.csv (predictions of the optimized ANN)
+    survived_dnn_opti.csv (predictions after GridSearch optimization - allows testing)
+    survived_rf.csv (predictions of the Random Forest model, see appendix I)   
+    survived_gb.csv (predictions of the Gradient Boosting model, see appendix II)
+    
 
